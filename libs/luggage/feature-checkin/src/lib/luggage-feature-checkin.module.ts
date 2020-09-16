@@ -9,3 +9,4 @@ import { CheckinComponent } from './checkin.component';
   exports: [CheckinComponent],
 })
 export class LuggageFeatureCheckinModule {}
+
