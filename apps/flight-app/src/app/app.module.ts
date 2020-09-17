@@ -1,7 +1,7 @@
 import { FlightCancellingModule } from "./flight-booking/flight-cancelling/flight-cancelling.module";
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { NgModule } from "@angular/core";
+import { NgModule, NgZone } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
 import { FlightLibModule } from "@flight-workspace/flight-lib";
@@ -14,13 +14,15 @@ import { HomeComponent } from "./home/home.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { SharedModule } from "./shared/shared.module";
 import { SidebarComponent } from "./sidebar/sidebar.component";
+import { ReactiveFormsModule } from '@angular/forms';
+import { FlightLookaheadComponent } from './lookahead/flight-lookahead.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
     FlightBookingModule,
-
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     FlightCancellingModule,
 
@@ -30,6 +32,7 @@ import { SidebarComponent } from "./sidebar/sidebar.component";
   ],
   declarations: [
     AppComponent,
+    FlightLookaheadComponent,
     SidebarComponent,
     NavbarComponent,
     HomeComponent,
@@ -38,4 +41,11 @@ import { SidebarComponent } from "./sidebar/sidebar.component";
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+
+
+  constructor(private ngZone: NgZone) {
+    (window as any).ngZone = ngZone;
+  }
+
+}

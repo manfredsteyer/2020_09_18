@@ -79,7 +79,10 @@
               "apps/flight-app/tsconfig.app.json",
               "apps/flight-app/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/flight-app/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/flight-app/**/*"
+            ]
           }
         },
         "test": {
@@ -112,8 +115,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/flight-app-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/flight-app-e2e/**/*"]
+            "tsConfig": [
+              "apps/flight-app-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/flight-app-e2e/**/*"
+            ]
           }
         }
       }
@@ -138,7 +146,9 @@
               "apps/dashboard/src/favicon.ico",
               "apps/dashboard/src/assets"
             ],
-            "styles": ["apps/dashboard/src/styles.css"],
+            "styles": [
+              "apps/dashboard/src/styles.css"
+            ],
             "scripts": [],
             "lazyModules": [
               "apps/dashboard/src/app/lazy-dashboard-tile/lazy-dashboard-tile.module"
@@ -193,7 +203,10 @@
               "apps/dashboard/tsconfig.app.json",
               "apps/dashboard/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/dashboard/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/dashboard/**/*"
+            ]
           }
         },
         "test": {
@@ -226,8 +239,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/dashboard-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/dashboard-e2e/**/*"]
+            "tsConfig": [
+              "apps/dashboard-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/dashboard-e2e/**/*"
+            ]
           }
         }
       }
@@ -252,7 +270,9 @@
               "apps/flight-admin/src/favicon.ico",
               "apps/flight-admin/src/assets"
             ],
-            "styles": ["apps/flight-admin/src/styles.css"],
+            "styles": [
+              "apps/flight-admin/src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -304,7 +324,10 @@
               "apps/flight-admin/tsconfig.app.json",
               "apps/flight-admin/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/flight-admin/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/flight-admin/**/*"
+            ]
           }
         },
         "test": {
@@ -337,8 +360,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/flight-admin-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/flight-admin-e2e/**/*"]
+            "tsConfig": [
+              "apps/flight-admin-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/flight-admin-e2e/**/*"
+            ]
           }
         }
       }
@@ -369,7 +397,10 @@
               "libs/logger-lib/tsconfig.lib.json",
               "libs/logger-lib/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/logger-lib/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/logger-lib/**/*"
+            ]
           }
         },
         "test": {
@@ -402,7 +433,9 @@
               "apps/external/src/favicon.ico",
               "apps/external/src/assets"
             ],
-            "styles": ["apps/external/src/styles.css"]
+            "styles": [
+              "apps/external/src/styles.css"
+            ]
           },
           "configurations": {
             "production": {
@@ -448,7 +481,10 @@
               "apps/external/tsconfig.app.json",
               "apps/external/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/external/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/external/**/*"
+            ]
           }
         },
         "test": {
@@ -482,8 +518,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/external-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/external-e2e/**/*"]
+            "tsConfig": [
+              "apps/external-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/external-e2e/**/*"
+            ]
           }
         }
       }
@@ -508,7 +549,10 @@
               "libs/flight-lib/tsconfig.lib.json",
               "libs/flight-lib/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/flight-lib/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/flight-lib/**/*"
+            ]
           }
         },
         "test": {
@@ -534,7 +578,10 @@
               "libs/dashboard-lib/tsconfig.lib.json",
               "libs/dashboard-lib/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/dashboard-lib/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/dashboard-lib/**/*"
+            ]
           }
         },
         "test": {
@@ -572,7 +619,10 @@
               "libs/luggage/domain/tsconfig.lib.json",
               "libs/luggage/domain/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/luggage/domain/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/luggage/domain/**/*"
+            ]
           }
         },
         "test": {
@@ -615,7 +665,9 @@
               "apps/luggage/src/favicon.ico",
               "apps/luggage/src/assets"
             ],
-            "styles": ["apps/luggage/src/styles.scss"],
+            "styles": [
+              "apps/luggage/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -673,7 +725,10 @@
               "apps/luggage/tsconfig.app.json",
               "apps/luggage/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/luggage/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/luggage/**/*"
+            ]
           }
         },
         "test": {
@@ -708,8 +763,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/luggage-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/luggage-e2e/**/*"]
+            "tsConfig": [
+              "apps/luggage-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/luggage-e2e/**/*"
+            ]
           }
         }
       }
