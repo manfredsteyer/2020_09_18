@@ -19,7 +19,8 @@
             "aot": true,
             "assets": [
               "apps/flight-app/src/favicon.ico",
-              "apps/flight-app/src/assets"
+              "apps/flight-app/src/assets",
+              "apps/flight-app/src/manifest.webmanifest"
             ],
             "styles": [
               "apps/flight-app/src/styles.css",
@@ -51,7 +52,9 @@
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": true,
+              "serviceWorker": true,
+              "ngswConfigPath": "apps/flight-app/ngsw-config.json"
             }
           }
         },
